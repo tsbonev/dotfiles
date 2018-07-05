@@ -41,5 +41,6 @@
 	b = branch
 	ds = diff --stat=160,120
 	sync = !git fetch upstream && git rebase upstream/master
+	synco = !git fetch origin && git rebase origin/master
 [merge]
 	tool = vimdiff
