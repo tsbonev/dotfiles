@@ -1,0 +1,19 @@
+"Generate_react_component": {
+		"prefix": "rc",
+		"body": [
+			"import React, { Component } from 'react'\n",
+
+			"class ${1:MyComponent} extends Component {\n",
+			  "\trender() {\n",
+				"\t\treturn (",
+					"\t\t\t<div className='${1:MyComponent}'>",
+					"\t\t\t\t$0",
+					"\t\t\t</div>",
+				"\t\t)",
+			  "\t}",
+			"}\n",
+			
+			"export default ${1:MyComponent}"
+		],
+		"description": "Generates a template react component"
+	},
