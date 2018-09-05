@@ -16,6 +16,7 @@
 	di = diff
 	dc = diff --cached
 	amend = commit --amend
+	ampotf = !git add . && git amend --no-edit && git potf 
 	aa = add --all
 	head = !git l -1
 	h = !git head
