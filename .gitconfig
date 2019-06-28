@@ -45,5 +45,6 @@
 	ds = diff --stat=160,120
 	sync = !git fetch upstream && git rebase upstream/master
 	synco = !git fetch origin && git rebase origin/master
+	recentb = git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 [merge]
 tool = vimdiff
